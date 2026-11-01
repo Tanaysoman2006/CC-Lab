@@ -18,6 +18,8 @@ This repository contains practical implementations, lexical analyzers, and parse
 | **Practical 8** | Postfix Expression Evaluation. | LEX & YACC |
 | **Practical 9** | Desk calculator with error recovery. | LEX & YACC |
 | **Practical 10** | Parser for "FOR" loop statements. | LEX & YACC |
+| **Practical 11** | Intermediate code generation for assignment expressions. | LEX & YACC |
+| **Practical 12** | Validate array declarations and count dimensions. | LEX & YACC |
 | **Value Added** | Intermediate code generator (ICG) for Arithmetic expression. | LEX & YACC |
 
 ---
@@ -45,3 +47,21 @@ yacc -d filename.y
 flex filename.l
 gcc y.tab.c lex.yy.c -ll
 ./a.out
+```
+
+### Practical 11: Intermediate Code Generation
+From `Practical_11/`:
+```bash
+yacc -d parser.y
+flex lexer.l
+gcc y.tab.c lex.yy.c -o exp11
+./exp11
+```
+
+### Practical 12: Array Declaration Validation
+From `Practical_12/`:
+```bash
+yacc -d parser.y
+flex lexer.l
+gcc y.tab.c lex.yy.c -o exp12
+./exp12
